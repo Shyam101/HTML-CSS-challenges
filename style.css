@@ -8,10 +8,14 @@
     --soft-violet:        hsl(277, 64%, 61%);  
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -23,7 +27,7 @@ body {
 .container {
     /* width: 100%; */
     margin: auto;
-    padding: 7.5vw;
+    padding: 6vw;
 }
 
 .split {
@@ -107,11 +111,8 @@ body {
         margin-top: 2rem;
     }
 }
-/* 
-- White (main heading, stats): hsl(0, 0%, 100%)
-- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
-- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6) */
-/* 
-Very dark blue (main background): hsl(233, 47%, 7%)
-- Dark desaturated blue (card background): hsl(244, 38%, 16%)
-- Soft violet (accent): hsl(277, 64%, 61%) */
+.attribution {
+    color: var(--white);
+    margin-top: 1rem;
+    position: relative;
+}
