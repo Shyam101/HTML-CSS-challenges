@@ -1,0 +1,88 @@
+:root {
+    --white:              hsl(0, 0%, 100%);
+    --slightly-white:     hsl(0, 0%, 100%, 0.75);
+    --transparent-white:  hsl(0, 0%, 100%, 0.6);
+
+    --dark-blue:          hsl(233, 47%, 7%);
+    --desaturated-blue:   hsl(244, 38%, 16%);
+    --soft-violet:        hsl(277, 64%, 61%);  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-blue);
+    font-family: Lexend Deca, serif;
+    font-weight: 400;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 5em;
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+    max-height: 500px;
+    overflow: hidden;
+    /* max-width: 1400px; */
+    min-width: 950px;
+    border-radius: 10px;
+    background-color: var(--desaturated-blue);
+}
+
+.padding-2em {
+    padding: 4em;
+}
+
+.info {
+    margin: 2em 0;
+    /* font-size: 1.1rem; */
+    color: var(--transparent-white)
+}
+/* .split > * {
+    flex-basis: 100%;
+} */
+/* .split h1 {
+    font-size: 2.3rem;
+} */
+
+.split img {
+    max-width: 50%;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    /* color: var(--white); */
+    justify-content: space-between;
+} 
+
+.margin--top {
+    margin-top: 4.5rem;
+}
+
+.font-white {
+    color: var(--white);
+}
+.flex h4 {
+    color: var(--transparent-white);
+}
+
+.col-violet {
+    color: var(--soft-violet);
+}
+/* 
+- White (main heading, stats): hsl(0, 0%, 100%)
+- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6) */
+/* 
+Very dark blue (main background): hsl(233, 47%, 7%)
+- Dark desaturated blue (card background): hsl(244, 38%, 16%)
+- Soft violet (accent): hsl(277, 64%, 61%) */
