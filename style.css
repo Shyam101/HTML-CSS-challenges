@@ -33,7 +33,7 @@ body {
     margin: 0 auto;
     display: grid;
     align-content: center;
-    padding: 6em 0;
+    padding: 5em 0;
 }
 
 .split {
@@ -128,3 +128,10 @@ body {
         flex-direction: column;
     }
 }
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 1rem;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
