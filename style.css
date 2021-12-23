@@ -1,0 +1,130 @@
+/* Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%) */
+
+
+:root {
+    --card1-col:    hsl(31, 77%, 52%);
+    --card2-col:    hsl(184, 100%, 22%);
+    --card3-col:    hsl(179, 100%, 13%);
+
+    --main-bg:      hsl(0, 0%, 95%);
+    --paragraphs:   hsla(0, 0%, 100%, 0.75);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display:wght@700&display=swap');
+
+body {
+    background-color: var(--main-bg);
+    font-family: 'Lexend Deca', 'Big Shoulders Display', sans-serif;
+}
+
+.container {
+    width: 70%;
+    max-width: 1000px;
+    min-width: 250px;
+    margin: 0 auto;
+    display: grid;
+    align-content: center;
+    padding: 6em 0;
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#card1 {
+    background-color: var(--card1-col);
+}
+
+#card1 button {
+    background-color: var(--main-bg);
+    color: var(--card1-col)
+}
+
+#card1 button:hover {
+    background-color: var(--card1-col);
+    color: var(--main-bg);
+}
+
+#card2 {
+    background-color: var(--card2-col);
+}
+
+#card2 button {
+    background-color: var(--main-bg);
+    color: var(--card2-col)
+}
+
+#card2 button:hover {
+    background-color: var(--card2-col);
+    color: var(--main-bg);
+}
+
+#card3 {
+    background-color: var(--card3-col);
+}
+
+#card3 button {
+    background-color: var(--main-bg);
+    color: var(--card3-col)
+}
+
+#card3 button:hover {
+    background-color: var(--card3-col);
+    color: var(--main-bg);
+}
+.content {
+    padding: 2rem;
+}
+
+.content > h1, a {
+    color: var(--main-bg);
+}
+
+.content h1 {
+    margin: 0.8em 0;
+}
+
+.content p {
+    color: var(--paragraphs);
+}
+
+.learn-more-btn {
+    padding: 0.5em 2em;
+    border: thin solid var(--main-bg);
+    border-radius: 50px;
+    font-weight: 300;
+    margin: 7em 0 2em;
+    /* background-color: var(--card1-col); */
+}
+
+.learn-more-btn > a {
+    text-decoration: none;
+    line-height: 1.5;
+    color: inherit;
+}
+
+
+@media (max-width: 1250px) {
+    .container {
+        width: 95%;
+        padding: 4em 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .split {
+        flex-direction: column;
+    }
+}
