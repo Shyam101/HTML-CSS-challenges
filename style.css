@@ -1,0 +1,263 @@
+:root {
+    --Pink:                     hsl(322, 100%, 66%);
+    --very_pale_cyan:           hsl(193, 100%, 96%);
+    --very_dark_cyan:           hsl(192, 100%, 9%);
+    --grayish_blue:             hsl(208, 11%, 55%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.vertical-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.padding-3rem {
+    padding: 3rem 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row > img {
+    max-width: 40%;
+}
+
+.row-no-space {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem 0;
+}
+
+#header {
+    background-image: url("./images/bg-hero-desktop.svg");
+    background-color: rgba(0, 255, 255, 0.089);
+}
+
+#header-img {
+    max-width: 55%;
+}
+
+.nav {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    max-width: 50%;
+}
+
+.link-btn {
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    background-color: white;
+    border-radius: 100px;
+    color: black;
+    box-shadow: 2px 2px black;
+    height: max-content;
+}
+
+.btn-pink {
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-radius: 100px;
+    background-color: var(--Pink);
+    width: max-content;
+    padding: 0.75rem 2.5rem;
+}
+
+.btn-pink:hover,
+.link-btn:hover {
+    opacity: 0.75;
+}
+
+.header-text {
+    padding: 0 3rem 0 0;
+    max-width: 50%;
+    /* border: solid thin red; */
+}
+
+.header-text p{
+    margin: 1.5rem 0;
+}
+
+.bordered-container {
+    /* border: solid 1px black; */
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 3rem 1rem;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+#section1 {
+    margin-top: 5rem;
+}
+
+.section-text-container {
+    padding: min(10vh, 5vw)
+}
+
+.section-text-container h2 {
+    font-size: xx-large;
+}
+
+.section-text-container p {
+    opacity: 0.75;
+}
+
+.section-text-container > p {
+    margin-top: 1rem;
+}
+
+.stick-out-box {
+    width: max-content;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    margin-top: -100px;
+    background-color: white;
+    padding: 2rem 1rem;
+    max-width: 90%;
+    text-align: center;
+}
+
+.stick-out-box > * {
+    margin: 1.5rem auto;
+}
+
+.footer {
+    background-color: var(--very_dark_cyan);
+    color: white;
+    padding: 7rem 2rem 2rem 2rem;
+}
+
+.footer-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    margin: 1rem 0;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    text-decoration: underline;
+} 
+
+.limit-25 {
+    max-width: 40%;
+}
+
+.row-no-space > img {
+    align-self: flex-start;
+    margin-right: 1rem;
+}
+
+footer img {
+    color: white;
+}
+
+.footer > * {
+    margin: 0 auto;
+}
+
+.social-media-links { 
+    margin: 1rem 2rem 0 0;
+    align-self: flex-start;
+}
+
+.social-media-links > * {
+    margin: 0.25rem;
+}
+
+.social-media-links svg:hover{
+    fill: var(--Pink);
+}
+
+
+@media (max-width: 750px) {
+    .footer > .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #header .row {
+        flex-direction: column;
+    }
+
+    #header-img {
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+
+    .header-text {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .header-text .btn-pink {
+        width: min(250px,80%);
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .limit-25 {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    #section2 > .row {
+        flex-direction: column;
+    }
+
+    #section1 > .row,
+    #section3 > .row {
+        flex-direction: column-reverse;
+    }
+
+    section * {
+        align-items: center;
+    }
+
+    .row > img {
+        max-width: 80%;
+    }
+    
+}
+
+/* @media (max-width: 500px) {
+    .nav img {
+        wid
+    }
+}  */
