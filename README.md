@@ -6,3 +6,4 @@ This repository contains my solution of [frontend mentor](https://www.frontendme
 - [stats preview card component](https://stats-preview-card-component1.herokuapp.com/)
 - [3 column preview card component](https://column-preview-card-component1.herokuapp.com/)
 - [social proof section master](https://social-proof-section-master1.herokuapp.com/)
+- [huddle landing page](https://huddle-landing-page1.herokuapp.com/)
