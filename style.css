@@ -118,6 +118,10 @@ section {
     margin: 2rem 0;
 }
 
+section img:hover {
+    transform: scale(1.1);
+}
+
 #section1 {
     margin-top: 5rem;
 }
@@ -130,12 +134,9 @@ section {
     font-size: xx-large;
 }
 
-.section-text-container p {
-    opacity: 0.75;
-}
-
 .section-text-container > p {
     margin-top: 1rem;
+    opacity: 0.75;
 }
 
 .stick-out-box {
@@ -145,7 +146,7 @@ section {
     top: 100px;
     margin-top: -100px;
     background-color: white;
-    padding: 2rem 1rem;
+    padding: 2rem 4rem;
     max-width: 90%;
     text-align: center;
 }
@@ -170,6 +171,7 @@ section {
 .footer-link:hover,
 .footer-link:focus {
     text-decoration: underline;
+    color: var(--Pink);
 } 
 
 .limit-25 {
@@ -255,9 +257,3 @@ footer img {
     }
     
 }
-
-/* @media (max-width: 500px) {
-    .nav img {
-        wid
-    }
-}  */
